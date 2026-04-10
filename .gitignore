@@ -1,0 +1,31 @@
+# Build output
+Debug/
+Release/
+
+# Object files
+*.obj
+*.out
+*.d
+*.map
+*.opt
+
+# CCS / TI generated
+*.ccxml
+*.rov.json
+*.bin
+
+# Clangd cache
+.clangd/
+.cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+*.html
+.clangd
+Codex_Agents/
+Codex_Prompts/
