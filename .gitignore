@@ -29,3 +29,5 @@ Thumbs.db
 .clangd
 Codex_Agents/
 Codex_Prompts/
+
+ATH2x_ENS160_I2C/targetConfigs/
