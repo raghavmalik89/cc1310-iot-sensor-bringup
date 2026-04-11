@@ -1,33 +1,64 @@
+# =========================
 # Build output
+# =========================
 Debug/
 Release/
 
-# Object files
+# Nested generated build folders
+**/Debug/
+**/Release/
+
+# =========================
+# Object / compiler output
+# =========================
 *.obj
 *.out
 *.d
 *.map
 *.opt
-
-# CCS / TI generated
-*.ccxml
-*.rov.json
 *.bin
 
-# Clangd cache
+# =========================
+# TI / CCS generated files
+# =========================
+*.rov.json
+
+# Ignore generated target config folders inside projects
+**/targetConfigs/
+
+# Optional:
+# Keep this ignored unless you intentionally want target config files tracked
+# *.ccxml
+
+# =========================
+# Clangd / indexing cache
+# =========================
 .clangd/
 .cache/
+**/.clangd/
+**/.cache/
 
-# OS
+# =========================
+# OS files
+# =========================
 .DS_Store
 Thumbs.db
 
-# VS Code
+# =========================
+# Editor files
+# =========================
 .vscode/
 
+# =========================
+# Temporary / export files
+# =========================
 *.html
-.clangd
-Codex_Agents/
-Codex_Prompts/
 
-ATH2x_ENS160_I2C/targetConfigs/
+# =========================
+# Codex workflow assets
+# Keep these tracked
+# =========================
+!Codex_Agents/
+!Codex_Agents/**
+!Codex_Prompts/
+!Codex_Prompts/**
